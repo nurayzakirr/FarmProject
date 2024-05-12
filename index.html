@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nurganic</title>
+        <link rel="icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Alkatra&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- SWIPER.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Remix Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+         
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+        
+         
+        <div id="scrollTop" onclick="scrollToTop()">
+            <i class="ri-arrow-up-line"></i>
+        </div>
+
+        
+        <div class="home" id="home">
+            <nav>
+                <div class="nav-logo">
+                    <i class="ri-suitcase-line"></i>
+                    <h2 id="company" onclick="scrollToTop()">Nurganic</h2>
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#home" class="pages">Əsas səhifə</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="pages">Haqqımızda</a>
+                        </li>
+                        <li>
+                            <a href="#featured" class="pages">Seçilmiş məhsullar</a>
+                        </li>
+                        <li>
+                            <a href="#tour" class="pages">Təsərrüfat Turu</a>
+                        </li>
+                    </ul>
+                    <div class="nav-close" id="nav-close" onclick="hideNav()">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <i class="ri-moon-line" id="moon" onclick="changeToDark()"></i>
+                <i class="ri-sun-line" id="sun" onclick="changeToLight()"></i>
+
+                <div class="nav-toggle" id="nav-toggle" onclick="showNav()">
+                    <i class="ri-apps-line" id="toggle"></i>
+                </div>
+            </nav>
+            <div class="header" id="header">
+                <div class="content" data-inViewport="slideTop">
+                    <h2 id="title"><span>Kənd</span> Məhsulları</h2>
+                    <p>
+                        Biz tərəvəzlərdən meyvələrə qədər yüksək keyfiyyətli təbii qida məhsulları təqdim edirik. Biz <b>yalnız</b> <br><b>qeyri-GMO</b> məhsulları yetişdiririk və satırıq.Məhsullarımız tamami ilə təbii və keyfiyyətlidir. Azərbaycanın hər nöqtəsində yetişən kənd təsərrüfatı məhsulları veb-saytımızda öz əksini tapmışdır. Aşağıda daha çoxu ilə tanış ola bilərsiz...
+                    </p>
+                    <button onclick="scrollToAbout()">Daha Çox!<i class="ri-arrow-right-line"></i></button>
+                </div>
+                <img src="assets/basket.png" data-inViewport="slideLeft">
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h2>Haqqımızda</h2>
+            <div class="content first">
+                <img src="assets/vege.jpg" data-inViewport="slideLeftDown">
+                <p data-inViewport="slideLeft"><span>Ümumi məlumat</span><br>Bizim missiyamız müştəriləri geni dəyişdirilmiş inqrediyentlərdən azad olmuş qidalarla təmin etməkdir.Biz təbii kənd təsərrüfatında tanınmış və güvənilən  yerli fermerlərlə işləyirik və hər bir məhsulu yüksək keyfiyyət standartlarımıza cavab verməsini təmin etmək üçün diqqətlə seçirik. <br> 
+                </p>
+            </div>
+            <div class="content">
+                <p data-inViewport="slideLeft"><span>Niyə bizi seçməlisiniz?</span><br>Təzə meyvə və tərəvəzlərdən süd məhsullarına qədər <br>bizim üzvi qida seçimimiz<br>müştərilərimizin müxtəlif ehtiyaclarını qarşılamaq, eyni zamanda<br> daha sağlam planeti dəstəkləmək üçün nəzərdə tutulub. Bizim orqanik məhsullarımız zərərli kimyəvi maddələrdən və gen dəyişdirilmiş inqrediyentlərdən azaddır.
+                </p>
+                <img src="assets/organic.jpg" id="special" data-inViewport="slideLeft">
+            </div>
+        </div>
+
+        <div class="featured" id="featured">
+            <h2>Seçilmiş Məhsullar </h2>
+            <p>Burada təqdim etdiyimiz bəzi üzvi məhsullar var. Onları yoxlamağınızı tövsiyə edirik!</p>
+            <div class="swiper" data-inViewport="slideTop">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2> Kök <br><sub> 2 azn 20 qep-1 kq</sub></h2>
+                        <img src="assets/carrots.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2> Portağal <br><sub> 3 azn-1kg</sub></h2>
+                        <img src="assets/oranges.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Sabirabad Qarpızı<br><sub> 1manat-1kg</sub></h2>
+                        <img src="assets/watermelon.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2> Göyçay Pomidoru<br><sub>4 azn- 1kq</sub></h2>
+                        <img src="assets/tomato.png">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="tour" id="tour">
+            <h2>Təsərüffat Turu</h2>
+            <p>Təsərrüfat turumuz üçün qeydiyyatdan keçin və əkmək üçün pulsuz orqanik <br>toxumlar əldə edin!</p>
+            <div class="signup">
+                <img src="assets/subscribe.svg">
+                <form>
+                    <input type="email" placeholder="Emailinizi Daxil Edin" required="required" id="email" autocomplete="off">
+                    <button type="submit" class="signUpBtn">Qeydiyyatdan Keçin.</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <ul>
+                    <h2>Ümumi Məlumat</h2>
+                    <li><a href="#">Qiymətlər</a></li>
+                    <li><a href="#">Mükafat</a></li>
+                    <li><a href="#">Gizlilik Siyasəti</a></li>
+                </ul>
+                <ul>
+                    <h2>Digərləri</h2>
+                    <li><a href="#">İanə et</a></li>
+                    <li><a href="#">Dəstək</a></li>
+                    <li><a href="#"> Bizim Komandamız</a></li>
+                </ul>
+            </div>
+            <p>© Copyright 2024.<br>
+                 
+            </p>
+        </div>
+               
+        
+        <script src="main.js"></script>
+    </body>
+</html>
